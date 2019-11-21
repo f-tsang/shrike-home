@@ -1,5 +1,24 @@
 {
   "name": "shrike-amp",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "yarn build && serve public",
+    "build": "yarn run gulp",
+    "serve": "serve",
+    "gulp": "gulp",
+    "pug": "pug -O pug.json -o public src"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.6",
+    "serve": "^11.2.0"
+  }
 }

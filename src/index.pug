@@ -1,0 +1,22 @@
+doctype html
+html(⚡ lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,minimum-scale=1")
+    meta(name="description" content=description)
+
+    include partials/cdn-google-fonts.html
+    include partials/amp-boilerplate.html
+
+    style(amp-custom)
+      include styles.css
+
+    link(rel="canonical" href=".")
+    title #{title}
+
+  body
+    include partials/placeholders.pug
+
+    //- NOTE: Should be the last element in body
+    style(amp-keyframes)
+      include animations.css
